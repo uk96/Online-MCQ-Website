@@ -1,0 +1,9 @@
+<?php
+session_start();
+?>
+<?php
+	$Val="not";
+	$_SESSION["username"]=$Val;
+	$_SESSION["TestID"]=$Val;
+	header("Location:home.html");
+?>

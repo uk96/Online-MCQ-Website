@@ -1,0 +1,190 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Online MCQ Test website</title>
+<meta name="description" content="QuickLearn Online MCQ Test website allows users to solve various quizes such as Maths,HR,English,etc..This site contains tips and strategies to solve MCQ Tests.">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<header>
+<img style="width:100%;height:36%;margin-top:0px;border-radius:20px" src="Online MCQ Test website.jpg" alt="Online MCQ Test website" Online MCQ Test website>
+<h1 style="text-align: center;color:white;font-family: broadway;z-index:1;margin-top:-90px;font-size:40px">Quick Learn</h1></img>
+<hr></hr>
+<div style="background-color:#004d99" id="box1">
+<div id="box">
+<p style="margin-top:0;font-family: Lucida Calligraphy;font-size: 25px;color:#ffbf80;padding:14px"><b>Develop a passion for learning and you will never cease to grow!</b></p>
+</div>
+</div>
+</header>
+
+<link rel="stylesheet" type="text/css" href="home7.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#div1").fadeToggle("slow");
+           });
+});
+
+</script>
+<style>
+  .modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  </style>
+</head>
+<body>
+
+<div id="wall">
+<hr></hr>
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+    <li><a href="prac.html">Register</a></li>
+  <li><a href="#btn1">About Us</a></li> 
+  <li><a href="#contact">Contact Us</a></li>
+
+</ul>
+<br>
+<h2 style="margin-left: 15px;font-family: forte;font-size: 45px;color:#800000;transform: rotate(-10deg);margin-top: -150px">HELLO FOLKS!</h2>
+<h3 style="margin-left: 350px;margin-top:110px;font-family: verdana;color: #404040"><i>Here are some Tips And Strategies to Solve MCQ Questions...</i></h3>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-default btn-lg" id="myBtn" style="width:160px;height:45px;float: right; margin-top:-122px;background-color:#ffa64d;color:white;border:2px solid black">
+  Login</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;background-color: #004d99">
+          <button type="button" class="close" data-dismiss="modal" style="background-color: #004d99">&times;</button>
+          <h4 style="background-color: #004d99"><span class="glyphicon glyphicon-lock" style="background-color: #004d99"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form" action="login.php" method="get">
+            <div class="form-group">
+              <label for="username"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" name="username" id="username" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+              <label for="passwords"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="password" class="form-control" name="passwords" id="passwords" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block" style="background-color: #004d99;border-color: #004d99"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="prac.html">Sign Up</a></p>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+ 
+
+ <img src="note.jpg" style="float:right;margin-right: 50px;margin-top:-30px"></img>
+ <div id="notes">
+<b><p>Quick Notes</p>
+<p>Quiz</p>
+<p>Practice sessions</p></b>
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+<div class="container" style="width:705px;height:300px;margin-left: 335px">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="margin-left: -10px">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+         <img src="mcq.jpg" alt="MCQ Tips" style="width:100%;height: 300px">
+      </div>
+
+      <div class="item">
+        <img src="mcq1.jpg" alt="MCQ Tips" style="width:100%;height: 300px">
+      </div>
+    
+      <div class="item">
+        <img src="mcq2.jpg" alt="MCQ Tips" style="width:100%;height: 300px">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div id="vid">
+
+<div class="arrow-right"></div>
+
+<div id="video">
+<p style="color: black; font-size: 20px;padding:25px">Watch Video</p>
+</div>
+
+<video style="width:676px; height:500px;margin-left: 350px;margin-top:-390px"  controls>
+<source src="mcq.mp4" type="video/mp4">
+</video>
+</div>
+<br>
+
+<button id="btn1">About Us</button><br><br>
+<div id="div1">
+	<p><i>This site contains tips and strategies to solve different types of mcq questions in very less time.Also once the user creates an account on this site; he/she will be able to 
+	solve various quizes such as Maths,HR,English,etc. This greatly helps the students in clearing their aptitude tests and also helps in increasing their general knowledge greatly.<br>
+	The faculty updates the questions in a period of 1-2 weeks and it also adds new topics to increase people's interests and help them wih their career.</i></p>
+</div>
+<br>
+
+<div id="contact">
+<button id="btn3"><p style="font-size: 30px;color:#001a33"><b>Contact Us</b><p>
+<b><p>NIKET: <u>niket.kini@somaiya.edu</u></p>
+<p>FATEMA: <u>fatema.kathawala@somaiya.edu</u></p>
+<p>UDDESH: <u>uddesh.kadu@somaiya.edu</u></p>
+</b></div>
+</button>
+</div>
+
+<br>
+<p style="position: static;right:0;bottom: 0;left: 0;padding:1rem;background-color: #cccccc;text-align: center">Copyright QUICK LEARN.ltd</strong></p>
+
+</div>
+</body>
+</html>

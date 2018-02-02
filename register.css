@@ -1,0 +1,63 @@
+body
+{
+    background-image: url("background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+form
+{
+font-family:rockwell;
+font-size:100%;
+}
+.btn button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin: 6px 0px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+}
+.btn button:hover {
+    opacity: 0.8;
+}
+
+input, select {
+    width: 70%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type=date] {
+    width: 70%;
+    padding: 6px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea
+{
+    width: 50%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=radio]
+{
+    width:8%;
+    padding: 0px 0px;
+    margin: 0px 0;
+  
+}
+#1 {
+    border-radius: 5px;
+   
+}
