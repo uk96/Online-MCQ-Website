@@ -15,6 +15,16 @@
 </div>
 </div>
 </header>
+<script src="http://lig-membres.imag.fr/donsez/cours/exemplescourstechnoweb/js_securehash/md5.js"></script>
+<script>
+function myfunction(){
+	
+	var message=document.getElementById("passwords").value;
+	var hash = calcMD5(message);
+	document.getElementById("passwords").value=hash;	
+}
+</script>
+
 
 <link rel="stylesheet" type="text/css" href="home7.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -84,7 +94,7 @@ $(document).ready(function(){
             <div class="checkbox">
               <label><input type="checkbox" value="" checked>Remember me</label>
             </div>
-              <button type="submit" class="btn btn-success btn-block" style="background-color: #004d99;border-color: #004d99"><span class="glyphicon glyphicon-off"></span> Login</button>
+              <button type="submit" onclick="myfunction()" class="btn btn-success btn-block" style="background-color: #004d99;border-color: #004d99"><span class="glyphicon glyphicon-off"></span> Login</button>
           </form>
         </div>
         <div class="modal-footer">

@@ -51,6 +51,19 @@
 </div>
 </div>
 </header>
+
+<script src="http://lig-membres.imag.fr/donsez/cours/exemplescourstechnoweb/js_securehash/md5.js"></script>
+<script>
+function myfunction(){
+	
+	var message=document.getElementById("passwords").value;
+	var hash = calcMD5(message);
+	document.getElementById("passwords").value=hash;
+	document.getElementById("passconfirm").value=hash;
+}
+</script>
+
+
 <hr></hr>
 <div id="wall1">
 <div class="btn">
@@ -69,7 +82,7 @@
 
 <input type="text" name="emailid" id="emailid" maxlength="100" placeholder="Enter your email id...eg:name@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required ><br>
  
-<input type="password" name="passwords" id="passwords" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your password..." required><br>
+<input type="password" name="passwords" id="passwords" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your password..." required><br>
 
 <input type="password" name="passconfirm" id="passconfirm"  placeholder="re-enter password..." required><br><br>
 
@@ -93,7 +106,7 @@ Select One:
 
 
 <div class="btn">
-<button type="submit">Register</button>
+<button type="submit" onclick="myfunction()">Register</button>
 <button type="reset">Reset</button>
 </div>
 </b>
