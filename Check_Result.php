@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
 <head>
-<title>Result Page</title>
+<title>Result</title>
 <link rel="stylesheet" type="text/css" href="home7.css">
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
